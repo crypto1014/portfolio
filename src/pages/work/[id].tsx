@@ -1,24 +1,24 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import works from '../../data/works'
-import { Work } from '../../types/Work'
+import { GetStaticProps, GetStaticPaths } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import works from "../../data/works";
+import { Work } from "../../types/Work";
 
-import * as S from '../../styles/work'
-import { ButtonAlternatives, ButtonSecondary } from '../../styles/styles'
-import { Footer } from '../../components/Footer'
-import { ArrowLeft } from 'phosphor-react'
+import * as S from "../../styles/work";
+import { ButtonAlternatives, ButtonSecondary } from "../../styles/styles";
+import { Footer } from "../../components/Footer";
+import { ArrowLeft } from "phosphor-react";
 
 interface WorkProps {
-  work: Work
+  work: Work;
 }
 
 export default function Projeto({ work }: WorkProps) {
   return (
     <>
       <Head>
-        <title>{work.title} | Evander Inácio </title>
+        <title>{work.title} | Emil Harjula </title>
         <meta name="description" content={work.description} />
         <meta property="og:title" content={work.title} />
         <meta property="og:description" content={work.description} />
@@ -40,22 +40,22 @@ export default function Projeto({ work }: WorkProps) {
           <p>{work.description}</p>
 
           <div className="tags">
-            {work.tags.map(tag => {
+            {work.tags.map((tag) => {
               return (
                 <ul key={tag.id}>
                   <Image width={40} height={40} src={tag.icon} alt={tag.name} />
                   <p>{tag.name}</p>
                 </ul>
-              )
+              );
             })}
           </div>
 
-          <Link href={'/'}>
+          <Link href={"/"}>
             <a>
               <ButtonAlternatives>
                 <ArrowLeft
                   style={{
-                    marginBottom: '-0.1rem'
+                    marginBottom: "-0.1rem",
                   }}
                   weight="bold"
                   size={16}
@@ -67,7 +67,7 @@ export default function Projeto({ work }: WorkProps) {
         </S.WorkBanner>
 
         <S.WorkDescription>
-          {work.prints.map(print => {
+          {work.prints.map((print) => {
             return (
               <>
                 <S.WorkContent>
@@ -85,18 +85,18 @@ export default function Projeto({ work }: WorkProps) {
                   </div>
                 </S.WorkContent>
               </>
-            )
+            );
           })}
         </S.WorkDescription>
 
-        <Link href={'/#work'}>
+        <Link href={"/#work"}>
           <ButtonSecondary>
             <a>
               <ArrowLeft
-                style={{ marginBottom: '-0.2rem' }}
+                style={{ marginBottom: "-0.2rem" }}
                 weight="bold"
                 size={18}
-              />{' '}
+              />{" "}
               Voltar
             </a>
           </ButtonSecondary>
@@ -105,11 +105,11 @@ export default function Projeto({ work }: WorkProps) {
 
       <Footer />
     </>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }: any) => {
-  const work = works.map(work => ({
+  const work = works.map((work) => ({
     id: work.id,
     url: work.url,
     imgUrl: work.img,
@@ -119,22 +119,22 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     description: work.description,
     tags: work.tags,
     date: work.date,
-    prints: work.prints
-  }))
+    prints: work.prints,
+  }));
 
-  const workId = work.find(work => work.url === params.id)
+  const workId = work.find((work) => work.url === params.id);
 
   return {
     props: {
-      work: workId
+      work: workId,
     },
-    revalidate: 60 // 60 seconds
-  }
-}
+    revalidate: 60, // 60 seconds
+  };
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: 'blocking'
-  }
-}
+    fallback: "blocking",
+  };
+};

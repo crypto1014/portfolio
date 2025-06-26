@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Evander Inácio - Desenvolvedor Front-End</title>
+        <title>Emil Harjula | Full stack developer</title>
       </Head>
 
       <Header />

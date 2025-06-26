@@ -20,12 +20,12 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Resume | Evander Inácio </title>
+        <title>Resume | Emil Harjula </title>
         <meta
           name="description"
           content="Aqui você poderá ver ou baixar o meu currículo."
         />
-        <meta property="og:title" content="Resume | Evander Inácio" />
+        <meta property="og:title" content="Resume | Emil Harjula" />
         <meta
           property="og:description"
           content="Aqui você poderá ver ou baixar o meu currículo."

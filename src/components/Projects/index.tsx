@@ -19,7 +19,7 @@ export function Projects() {
   return (
     <Container id="projects">
       <Title>
-        Projetos
+        Projects
         <span>
           <HiOutlineDesktopComputer /> Projects
         </span>

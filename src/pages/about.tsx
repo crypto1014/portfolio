@@ -1,32 +1,31 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
-import { ScrollTop } from '../components/ScrollTop'
-import { Links } from '../components/Links'
-import { BiUserPin } from 'react-icons/bi'
-import { AiFillGithub } from 'react-icons/ai'
-import { RiWhatsappFill } from 'react-icons/ri'
-import { BsLinkedin } from 'react-icons/bs'
-import { GrMail } from 'react-icons/gr'
-import { FaDiscord } from 'react-icons/fa'
-import * as S from '../styles/about'
-import { ButtonAlt, Section, Title } from '../styles/styles'
+import Head from "next/head";
+import Link from "next/link";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { ScrollTop } from "../components/ScrollTop";
+import { Links } from "../components/Links";
+import { BiUserPin } from "react-icons/bi";
+import { AiFillGithub } from "react-icons/ai";
+import { RiTelegramFill, RiWhatsappFill } from "react-icons/ri";
+import { BsLinkedin } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
+import { FaDiscord } from "react-icons/fa";
+import * as S from "../styles/about";
+import { ButtonAlt, Section, Title } from "../styles/styles";
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>About | Evander Inácio </title>
+        <title>About | Emil Harjula </title>
         <meta
           name="description"
-          content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React
-          do Brasil."
+          content="My name is Emil Harjula. I am a senior full stack developer."
         />
-        <meta property="og:title" content="About | Evander Inácio" />
+        <meta property="og:title" content="About | Emil Harjula" />
         <meta
           property="og:description"
-          content="Meu nome é Evander Inácio, sou um desenvolvedor front-end React do Brasil."
+          content="My name is Emil Harjula. I am a senior full stack developer."
         />
       </Head>
 
@@ -36,8 +35,7 @@ export default function About() {
       <Section>
         <S.AboutContainer>
           <Title>
-            <p>../about</p>
-            Sobre
+            About
             <span>
               <BiUserPin /> About
             </span>
@@ -45,49 +43,56 @@ export default function About() {
 
           <S.AboutContent>
             <S.AboutImage>
-              <img
+              {/* <img
                 className="AboutImg"
-                src="/Evander.webp"
+                src="/emiharjula.jpg"
                 alt="Imagem de perfil Evander"
-              />
+              /> */}
 
               <div className="links">
                 <ul>
-                  <Link href={'https://github.com/EvanderInacio'}>
-                    <a target="_blank" aria-label="Link para o Github">
-                      <AiFillGithub size={25} /> @EvanderInacio
-                    </a>
-                  </Link>
-                  <Link href={'https://www.linkedin.com/in/evander-inacio/'}>
-                    <a target="_blank" aria-label="Link para o Linkedin">
-                      <BsLinkedin size={25} /> @evander-inacio
+                  <Link href={"https://github.com/crypto1014"}>
+                    <a target="_blank" aria-label="Link to my GitHub">
+                      <AiFillGithub size={25} /> @crypto1014
                     </a>
                   </Link>
                   <Link
-                    href={'https://api.whatsapp.com/send?phone=5511995085916'}
+                    href={"https://www.linkedin.com/in/emil-harjula-b818b5362/"}
                   >
-                    <a target="_blank" aria-label="Link para o WhatsApp">
-                      <RiWhatsappFill size={25} /> +55 (11) 99508-5916
+                    <a target="_blank" aria-label="Link via Linkedin">
+                      <BsLinkedin size={25} /> @ Emil Harjula
                     </a>
                   </Link>
                   <Link
-                    href={'https://www.discordapp.com/users/evander_inacio'}
+                    href={"https://api.whatsapp.com/send?phone=14706968158"}
+                  >
+                    <a target="_blank" aria-label="Link via WhatsApp">
+                      <RiWhatsappFill size={25} /> +1 (470) 696 8158
+                    </a>
+                  </Link>
+                  <Link href={"https://t.me/@kdrilling"}>
+                    <a target="_blank" aria-label="Link via Telegram">
+                      <RiTelegramFill size={25} /> @kdrilling
+                    </a>
+                  </Link>
+                  <Link
+                    href={"https://www.discordapp.com/users/evander_inacio"}
                   >
                     <a
                       className="dc"
                       target="_blank"
                       aria-label="Link para o Discord"
                     >
-                      <FaDiscord size={25} /> @evander_inacio
+                      <FaDiscord size={25} /> @emilharjula
                     </a>
                   </Link>
-                  <Link href={'mailto:evander.20116@gmail.com'}>
+                  <Link href={"mailto:emilharjula@gmail.com"}>
                     <a
                       className="email"
                       target="_blank"
-                      aria-label="Link para o email"
+                      aria-label="Link via email"
                     >
-                      <GrMail size={25} /> @evander.20116@gmail.com
+                      <GrMail size={25} /> emilharjula@gmail.com
                     </a>
                   </Link>
                 </ul>
@@ -98,7 +103,7 @@ export default function About() {
                   Vamos conversar, quem sabe criar um projeto incrível juntos?
                 </h3>
                 <p>Me mande uma mensagem! 😉</p>
-                <Link href={'/contact'}>
+                <Link href={"/contact"}>
                   <a>
                     <ButtonAlt>Contato</ButtonAlt>
                   </a>
@@ -106,51 +111,30 @@ export default function About() {
               </S.AboutContact>
             </S.AboutImage>
             <S.AboutDescription>
-              <p>
-                Meu nome é Evander Inácio, sou um desenvolvedor front-end React
-                do Brasil, apaixonado por projetar e codificar. Minha
-                especialidade é a criação de interfaces e funcionalidades para
-                aplicativos da web usando React.js e Next.js.
+              <p style={{ lineHeight: "30px", letterSpacing: "0.2px" }}>
+                Dynamic Full Stack and Blockchain Developer with over 6 years of
+                experience in React, Next.js, Python and NodeJS developing Web3
+                Dapp and fintech systems. Passionate about crafting
+                user-friendly interfaces and optimizing performance.
               </p>
-              <p>
-                Iniciei minha jornada na universidade com o objetivo inicial de
-                cursar Análise e Desenvolvimento de Sistemas. Sempre tive
-                interesse por computadores e uma curiosidade em relação à
-                criação de páginas web. Então, decidi unir essas duas paixões e
-                ingressei na faculdade para explorar as possibilidades da área
-                de TI.
+              <p style={{ lineHeight: "30px", letterSpacing: "0.2px" }}>
+                Contributed to increasing user participation and satisfaction
+                through smart and userfriendly UI/UX design. Proficient in using
+                React, Vue.js, Svelte, Node.js and Django, Ruby on Rails
+                frameworks and has extensive experience building and deploying
+                web applications on the AWS, Digital Ocean.
               </p>
-              <p>
-                Foi somente em 2021, no penúltimo semestre da faculdade, que
-                comecei a levar a programação mais a sério. Iniciei minha
-                primeira tentativa de aprender HTML e CSS, porém acabei dando
-                uma pausa após alguns meses devido à falta de tempo livre.
+              <p style={{ lineHeight: "30px", letterSpacing: "0.2px" }}>
+                Also, I have rich experience and deep knowledge in EVM based
+                chains and Solana chain. Participated in several blockchain
+                projects like ICO (Initial Coin Offering) launchpad, and DEX
+                (Decentralized Exchange) integration, Smart contract development
+                using hardhat frameworks for EVM chains and Anchor frameworks
+                for Solana.
               </p>
-              <p>
-                No ano seguinte, em 2022, percebi que precisava definir um
-                objetivo claro. Foi então que direcionei meus esforços para
-                aprimorar minhas habilidades em HTML, CSS e JavaScript, com o
-                objetivo de construir aplicações web e aprofundar meu
-                aprendizado. Esse foi o ponto de partida para me tornar um
-                desenvolvedor web.
-              </p>
-              <p>
-                Em termos de minha experiência até o momento, tenho uma base
-                sólida em desenvolvimento front-end. Gosto de trabalhar com
-                React e NextJS para criar interfaces de usuário dinâmicas.
-                Trabalhei como desenvolvedor front-end freelancer,
-                utilizando ReactJS e Material UI, além de colaborar com a equipe de desenvolvimento Back-end para integrar componentes Front-end e Back-end de nossas aplicações.
-              </p>
-              <p>
-                Continuo estudando e desenvolvendo projetos
-                pessoais para expandir meus conhecimentos, focado no ecossistema
-                Javascript para desenvolvimento Front-end utilizando ReactJS,
-                Typescript, Next.js, entre outros.
-              </p>
-              <p>
-                Estou sempre em busca de desafios e oportunidades para crescer
-                profissionalmente, e estou animado para contribuir com projetos
-                interessantes e inovadores no campo do desenvolvimento web.
+              <p style={{ lineHeight: "30px", letterSpacing: "0.2px" }}>
+                Flexible communication skills with technical and non-technical
+                colleagues and strong technical problemsolving skills.
               </p>
             </S.AboutDescription>
           </S.AboutContent>
@@ -158,5 +142,5 @@ export default function About() {
       </Section>
       <Footer />
     </>
-  )
+  );
 }

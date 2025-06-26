@@ -26,7 +26,7 @@ export default function Projeto({ project }: ProjectProps) {
   return (
     <>
       <Head>
-        <title>{project.title} | Evander Inácio </title>
+        <title>{project.title} | Emil Harjula </title>
         <meta name="description" content={project.description} />
         <meta property="og:title" content={project.title} />
         <meta property="og:description" content={project.description} />

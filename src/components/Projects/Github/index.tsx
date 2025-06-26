@@ -16,7 +16,7 @@ export function AllProjects({ title }: AllContent) {
         <AllContent>
           <Link href={'/projects'}>
             <ButtonAlt>
-              Projetos <AiOutlineAppstore size={20} />
+              Projects <AiOutlineAppstore size={20} />
             </ButtonAlt>
           </Link>
 

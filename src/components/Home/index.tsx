@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import Typewriter from 'typewriter-effect'
-import { ButtonPrimary, Container } from '../../styles/styles'
-import { Content, ImgHome, HomeText } from './styles'
-import { FiArrowRight } from 'react-icons/fi'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Typewriter from "typewriter-effect";
+import { ButtonPrimary, Container } from "../../styles/styles";
+import { Content, ImgHome, HomeText } from "./styles";
+import { FiArrowRight } from "react-icons/fi";
 
 export function HomeHero() {
   return (
@@ -13,10 +13,10 @@ export function HomeHero() {
       <Content>
         <HomeText>
           <p>
-            <span>👋🏻</span> Olá, o meu nome é
+            <span>👋🏻</span> Hello, Nice to meet you
           </p>
           <h1>
-            Evander Inácio
+            Emil Harula
             <span className="animation">
               <Image
                 width={200}
@@ -29,20 +29,20 @@ export function HomeHero() {
           <h2>
             <Typewriter
               options={{
-                strings: ['Desenvolvedor Front-End'],
+                strings: ["Senior Full stack developer"],
                 autoStart: true,
                 loop: true,
-                skipAddStyles: true
+                skipAddStyles: true,
               }}
             />
           </h2>
 
           <div className="button">
-            <Link href={'#projects'}>
+            <Link href={"#projects"}>
               <ButtonPrimary>
                 <a>
-                  <b>Conheça meu portfólio </b>
-                  <FiArrowRight style={{ marginBottom: '-0.3rem' }} size={20} />
+                  <b>Explore Projects </b>
+                  <FiArrowRight style={{ marginBottom: "-0.3rem" }} size={20} />
                 </a>
               </ButtonPrimary>
             </Link>
@@ -62,5 +62,5 @@ export function HomeHero() {
         </ImgHome>
       </Content>
     </Container>
-  )
+  );
 }

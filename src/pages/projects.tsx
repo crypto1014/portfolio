@@ -31,12 +31,12 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | Evander Inácio </title>
+        <title>Projects | Emil Harjula </title>
         <meta
           name="description"
           content="Adoro codificar usando ferramentas como React, NextJS, Tailwind, Styled Components e muito mais! Aqui estão alguns dos meus projetos favoritos."
         />
-        <meta property="og:title" content="Projects | Evander Inácio" />
+        <meta property="og:title" content="Projects | Emil Harjula" />
         <meta
           property="og:description"
           content="Adoro codificar usando ferramentas como React, NextJS, Tailwind, Styled Components e muito mais! Aqui estão alguns dos meus projetos favoritos."
@@ -49,7 +49,7 @@ export default function Projects() {
       <T.Section>
         <T.Title>
           <p>../projects</p>
-          Projetos
+          Projects
           <span>
             <HiOutlineDesktopComputer /> Projects
           </span>

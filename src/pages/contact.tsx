@@ -9,12 +9,12 @@ export default function Contacts() {
   return (
     <>
       <Head>
-        <title>Contact | Evander Inácio </title>
+        <title>Contact | Emil Harjula </title>
         <meta
           name="description"
           content="Sinta-se à vontade para entrar em contato e vamos conversar sobre como podemos trabalhar juntos."
         />
-        <meta property="og:title" content="Contact | Evander Inácio" />
+        <meta property="og:title" content="Contact | Emil Harjulao" />
         <meta
           property="og:description"
           content="Sinta-se à vontade para entrar em contato e vamos conversar sobre como podemos trabalhar juntos."

@@ -4,45 +4,47 @@ import Document, {
   Main,
   NextScript,
   DocumentContext,
-  DocumentInitialProps
-} from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+  DocumentInitialProps,
+} from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 const meta = {
-  title: 'Evander Inácio - Desenvolvedor Front-End',
-  description:
-    'Desenvolvedor Front-end do Brasil. Especializado em criação de interfaces e funcionalidades para aplicativos da web usando React.js e Next.js.',
+  title: "Emil Harjula - Full stack developer",
+  description: "Senior Full stack developer",
   image:
-    'https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png'
-}
+    "https://raw.githubusercontent.com/EvanderInacio/Portfolio/main/public/ogimage.png",
+};
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
-		const sheet = new ServerStyleSheet();
-		const originalRenderPage = ctx.renderPage;
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
-		try {
-			ctx.renderPage = () =>
-				originalRenderPage({
-					enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
-				});
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
 
-			const initialProps = await Document.getInitialProps(ctx);
-			return {
-				...initialProps,
-				styles: [initialProps.styles, sheet.getStyleElement()],
-			};
-		} finally {
-			sheet.seal();
-		}
-	}
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: [initialProps.styles, sheet.getStyleElement()],
+      };
+    } finally {
+      sheet.seal();
+    }
+  }
 
   render() {
     return (
-      <Html lang="pt-BR">
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="author" content="Evander Inácio" />
+          <meta name="author" content="Emil Harjula" />
           <meta name="description" content={meta.description} />
           <meta itemProp="name" content={meta.title} />
           <meta itemProp="description" content={meta.description} />
@@ -53,7 +55,7 @@ export default class MyDocument extends Document {
           />
 
           <meta name="theme-color" content="#00d9ff" />
-          <meta name="copyright" content="Evander Inácio 2023" />
+          <meta name="copyright" content="Emil Harjula 2023" />
           <meta http-equiv="content-language" content="pt-br" />
           <meta name="robots" content="index, follow" />
           <meta http-equiv="cache-control" content="no-cache" />
@@ -71,7 +73,7 @@ export default class MyDocument extends Document {
 
           <meta property="og:url" content="https://www.evander.com.br/" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="Evander Inácio" />
+          <meta property="og:site_name" content="Emil Harjula" />
           <meta property="og:title" content={meta.title} />
           <meta property="og:description" content={meta.description} />
           <meta property="og:image" content={meta.image} />
@@ -87,6 +89,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }

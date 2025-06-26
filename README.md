@@ -14,14 +14,13 @@
 
 <br>
 
-## 📝 Descrição 
+## 📝 Descrição
 
-Meu portfólio criado com o objetivo de mostrar meus projetos. 
-
+Meu portfólio criado com o objetivo de mostrar meus projetos.
 
 ## 🚀 Deploy
 
- [evander.com.br](https://www.evander.com.br)
+[evander.com.br](https://www.evander.com.br)
 
 ## 🔥 Tecnologias
 
@@ -40,6 +39,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Phosphor Icons](https://phosphoricons.com/)
 
 ## 💻 Autor<br>
+
 <table>
   <tr>
     <td align="center">
@@ -53,6 +53,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   </tr>
 </table>
 
------
+---
 
-  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/evander-inacio/">Evander Inácio</a> ☕</h3>
+  <h3 align="center"> Developed by <a href="https://www.linkedin.com/in/emil-harjula-b818b5362/">Evander Inácio</a> ☕</h3>

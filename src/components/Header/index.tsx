@@ -28,7 +28,7 @@ export function Header() {
               />
             </div>
 
-            {'Evander'.split('').map((letter, index) => {
+            {'Emil'.split('').map((letter, index) => {
               return (
                 <span key={index} className="logo-name">
                   {letter}
@@ -60,7 +60,7 @@ export function Header() {
           <li>
             <Link href={'/about'}>
               <a>
-                <span>Sobre</span>
+                <span>About me</span>
               </a>
             </Link>
           </li>
@@ -68,7 +68,7 @@ export function Header() {
           <li>
             <Link href={'/experience'}>
               <a>
-                <span>Experiência</span>
+                <span>Experience</span>
               </a>
             </Link>
           </li>
@@ -76,7 +76,7 @@ export function Header() {
           <li>
             <Link href={'/projects'}>
               <a>
-                <span>Projetos</span>
+                <span>Projects</span>
               </a>
             </Link>
           </li>
@@ -92,27 +92,27 @@ export function Header() {
           <li>
             <Link href={'/contact'}>
               <a>
-                <span>Contato</span>
+                <span>Contacts</span>
               </a>
             </Link>
           </li>
         </ul>
 
         <Icons>
-          <Link href={'https://github.com/EvanderInacio'}>
-            <a target="_blank" aria-label="Link para o Github">
+          <Link href={'https://github.com/crypto1014'}>
+            <a target="_blank" aria-label="Link to the Github">
               <FiGithub />
             </a>
           </Link>
-          <Link href={'https://www.linkedin.com/in/evander-inacio/'}>
-            <a target="_blank" aria-label="Link para o Linkedin">
+          <Link href={'https://www.linkedin.com/in/emil-harjula-b818b5362/'}>
+            <a target="_blank" aria-label="Link to the Linkedin">
               <FiLinkedin />
             </a>
           </Link>
-          <Link href={'https://api.whatsapp.com/send?phone=5511995085916'}>
+          <Link href={'https://api.whatsapp.com/send?phone=14706968158'}>
             <a
               target="_blank"
-              aria-label="Link para entrar em contato via whatsapp"
+              aria-label="Link via whatsapp"
             >
               <FaWhatsapp />
             </a>
