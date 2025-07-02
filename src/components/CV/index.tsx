@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { ButtonSecondAlt, Container, Title } from "../../styles/styles";
-import { CVContainer, CVContent, CVDescription, Curriculum } from "./styles"
-import { FiDownload } from 'react-icons/fi'
+import { CVContainer, CVContent, CVDescription, Curriculum } from "./styles";
+import { FiDownload } from "react-icons/fi";
 
 export function CV() {
   return (
     <Container>
       <CVContainer>
-        <Title style={{ marginBottom: '3rem' }}>
+        <Title style={{ marginBottom: "3rem" }}>
           <span>
             <FiDownload /> Download
           </span>
@@ -15,29 +15,32 @@ export function CV() {
 
         <CVContent>
           <CVDescription>
-              <div className="aspas">&ldquo;</div>
-              <p>
-                Aqui você pode baixar meu currículo clicando no botão de download.
-              </p>
-              <div className="profile">
-                <img src="https://github.com/EvanderInacio.png" alt="Imagem de perfil" />
-                <div className="name">
-                  <h3>Evander Inacio</h3>
-                  <span>Desenvolvedor Front end</span>
-                </div>
+            <div className="aspas">&ldquo;</div>
+            <p>
+              Here you can download my resume by clicking the download button.
+            </p>
+            <div className="profile">
+              <img
+                src="https://github.com/crypto1014.png"
+                alt="Imagem de perfil"
+              />
+              <div className="name">
+                <h3>Emil Harjula</h3>
+                <span>Full stack Developer</span>
               </div>
+            </div>
           </CVDescription>
-          
+
           <Curriculum>
-            <img src="/cv.png" alt="Homem mostrando um botão de download de currículo" />
-            <a href="/pdf/Evander-CV.pdf" download>
+            <img src="/cv.png" alt="Man showing a resume download button" />
+            <a href="/pdf/emilharjula.pdf" download>
               <ButtonSecondAlt>
-                <b>Download CV</b> <FiDownload size={20}  />
+                <b>Download CV</b> <FiDownload size={20} />
               </ButtonSecondAlt>
             </a>
           </Curriculum>
-        </CVContent>        
+        </CVContent>
       </CVContainer>
     </Container>
-  )
+  );
 }

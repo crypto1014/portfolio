@@ -9,7 +9,7 @@ export const PageSection = styled.div`
   gap: 5rem;
 
   iframe {
-    width: 100%;
+    width: 1360px;
     border: none;
     height: 44.5rem;
     @media (min-width: 768px) {

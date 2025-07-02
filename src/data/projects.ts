@@ -1,16 +1,16 @@
 const projects = [
   {
     id: 1,
-    url: 'e-shop',
-    banner: '/projects/e-shop/banner.png',
-    img: '/projects/e-shop/home.png',
-    title: 'E-Shop',
+    url: 'pepofun',
+    banner: '/projects/pepo/1.png',
+    img: '/projects/pepo/1.png',
+    title: 'PEPO site',
     type: 'Website',
     icon: '/projects/e-shop/logo.svg',
-    github: 'https://github.com/EvanderInacio/E-Shop',
-    web: 'https://ecommerce-e-shop.vercel.app/',
+    github: 'https://github.com/crypto1014/E-Shop',
+    web: 'pepo.fun',
     description:
-      'Este projeto é uma implementação de um site de e-commerce completo, construído com as tecnologias Next.js, Tailwind CSS e integração de pagamentos utilizando Stripe. O objetivo é criar uma plataforma de compras online moderna, responsiva e de fácil utilização.',
+      'This is the token introducing site.',
     tags: [
       {
         name: 'Next JS',
@@ -31,8 +31,8 @@ const projects = [
         rgb: '56, 189, 248'
       },
       {
-        name: 'Stripe',
-        icon: '/skills/stripe.svg',
+        name: 'Solana',
+        icon: '/skills/solana.png',
         color: '#635BFF',
         rgb: '99, 91, 255'
       },
@@ -80,10 +80,10 @@ const projects = [
         img: '/projects/e-shop/success.png'
       },
     ],
-    status: 'Completo',
-    year: '2023',
+    status: 'Complete',
+    year: '2024',
     gif: '/projects/e-shop/e-shop.mp4',
-    backgroundImage: '/projects/e-shop/home.png',
+    backgroundImage: '/projects/pepo/1.png',
     video:
       'https://www.youtube.com/watch?v=xotEZglo6l8&ab_channel=EvanderIn%C3%A1cio'
   },
@@ -96,7 +96,7 @@ const projects = [
     title: 'WhatsApp',
     type: 'Website',
     icon: '/projects/whatsapp/icon.svg',
-    github: 'https://github.com/EvanderInacio/WhatsApp',
+    github: 'https://github.com/crypto1014/WhatsApp',
     web: 'https://whatsapp-green.vercel.app/',
     description:
       'Clone do WhatsApp web, usando ReactJs e Styled Components para fazer a estilização e o firebase e suas funcionalidades como o AUTH para autenticação de usuários e FIRESTORE para armazenar as conversas de cada pessoa cadastrada.  Com a opção de dark mode para alterar o tema e assim ficar com uma interface agradável.',
@@ -177,7 +177,7 @@ const projects = [
     title: 'Turtle Movie',
     type: 'Website',
     icon: '/projects/turtlemovie/icon.png',
-    github: 'https://github.com/EvanderInacio/Turtle-Movie',
+    github: 'https://github.com/crypto1014/Turtle-Movie',
     web: 'https://turtle-movie.vercel.app/',
     description:
       'Explore uma plataforma incrível que utiliza a poderosa API da TMDB para proporcionar a você uma experiência completa de descoberta de filmes e séries. Descubra as obras mais bem avaliadas da semana ou do dia, e mergulhe em uma seleção das obras mais populares da plataforma. Além disso, explore as obras com as maiores notas, para ter certeza de que está assistindo o melhor conteúdo disponível.',
@@ -272,7 +272,7 @@ const projects = [
     title: 'PlayStation',
     type: 'Website',
     icon: '/projects/playstation/icon.svg',
-    github: 'https://github.com/EvanderInacio/PlayStation',
+    github: 'https://github.com/crypto1014/PlayStation',
     web: 'https://playstation-4.vercel.app/',
     description: 'Explore a plataforma de comércio eletrônico da PlayStation, dedicada à venda dos mais incríveis controles de videogame da marca. O website apresenta uma extensa lista de diferentes tipos e modelos de controles, tudo isso com uma estética dark mode envolvente e uma interface intuitiva que cativará você, repleta de animações sutis e atraentes.',
     tags: [
@@ -354,7 +354,7 @@ const projects = [
     title: 'Podcastr',
     type: 'Website',
     icon: '/projects/podcastr/icon.svg',
-    github: 'https://github.com/EvanderInacio/Podcastr',
+    github: 'https://github.com/crypto1014/Podcastr',
     web: 'https://podcastr-evander.vercel.app/',
     description:
       'Podcastr é uma plataforma construída para transmissão de podcast. Com opção de escolha de um determinado podcast e ainda podendo ver os detalhes de um podcast como a data de sua publicação, o assunto dele assim como uma breve descrição e seus participates.',
@@ -414,7 +414,7 @@ const projects = [
     title: 'Github Blog',
     type: 'Website',
     icon: '/projects/github-blog/logo.svg',
-    github: 'https://github.com/EvanderInacio/Github-Blog',
+    github: 'https://github.com/crypto1014/Github-Blog',
     web: 'https://github-blog-evander.vercel.app/',
     description:
       'Github Blog é um website que simula um blog, pegando os dados da api do Github atravez de issues do proprio repositorio onde o projeto foi construido e assim ele exibe em forma de lista podendo pesquisar pelo o nome e ver os detalhes de cada publicação.',
@@ -480,7 +480,7 @@ const projects = [
     title: 'Pomodoro Timer',
     type: 'App',
     icon: '/projects/pomodoro/timer.png',
-    github: 'https://github.com/EvanderInacio/Pomodoro-Timer',
+    github: 'https://github.com/crypto1014/Pomodoro-Timer',
     web: 'https://pomodoro-timer-evander.vercel.app/',
     description:
       'Pomodoro, o objetivo deste aplicativo é ajudá-lo a se concentrar em qualquer tarefa em que esteja trabalhando, como estudar, escrever ou codificar. Este aplicativo é inspirado na Técnica Pomodoro, que é um método de gerenciamento de tempo desenvolvido por Francesco Cirillo.',
@@ -551,7 +551,7 @@ const projects = [
     title: 'Pokedex',
     type: 'Website',
     icon: '/projects/pokedex/logo.svg',
-    github: 'https://github.com/EvanderInacio/Pokedex',
+    github: 'https://github.com/crypto1014/Pokedex',
     web: 'https://pokedex-evander.vercel.app/',
     description:
       'O Pokedex é um projeto que consiste em uma plataforma web que tem como funcionalidade listar todos os Pokémons. Todos os dados sobre os pokémons foram obtidos através da PokéApi. A lista conta com a possibilidade de pesquisar um determinado pokémon, assim como cada pokémon recebe uma cor de card dependendo de seu atributo fornecido da api. Pegando esse dado determino uma cor para cara pokémon e assim fica com uma interface agradável e intuitiva para navegação.',

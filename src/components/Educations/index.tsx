@@ -13,7 +13,7 @@ export function Educations() {
   return (
     <S.ContainerEducation>
       <Title>
-        Educação
+        Education
         <span>
           <GraduationCap /> Education
         </span>

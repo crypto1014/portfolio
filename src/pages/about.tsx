@@ -100,12 +100,12 @@ export default function About() {
 
               <S.AboutContact>
                 <h3>
-                  Vamos conversar, quem sabe criar um projeto incrível juntos?
+                  Let's talk, who knows, maybe we can create an incredible project together?
                 </h3>
-                <p>Me mande uma mensagem! 😉</p>
+                <p>Send me a message! 😉</p>
                 <Link href={"/contact"}>
                   <a>
-                    <ButtonAlt>Contato</ButtonAlt>
+                    <ButtonAlt>Contact</ButtonAlt>
                   </a>
                 </Link>
               </S.AboutContact>

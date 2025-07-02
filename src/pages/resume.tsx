@@ -1,21 +1,20 @@
-import Head from 'next/head'
-import { Header } from '../components/Header'
-import { Links } from '../components/Links'
-import { Footer } from '../components/Footer'
-import { ScrollTop } from '../components/ScrollTop'
-import { CV } from '../components/CV'
-import { Description, Section, Title } from '../styles/styles'
-import { PageSection } from '../styles/resume'
-import { BsFileText } from 'react-icons/bs'
+import Head from "next/head";
+import { Header } from "../components/Header";
+import { Links } from "../components/Links";
+import { Footer } from "../components/Footer";
+import { ScrollTop } from "../components/ScrollTop";
+import { CV } from "../components/CV";
+import { Description, Section, Title } from "../styles/styles";
+import { PageSection } from "../styles/resume";
+import { BsFileText } from "react-icons/bs";
 
 export default function Resume() {
-  const resumeData =
-    'https://www.canva.com/design/DAFTFxhLLPw/ddljelrvwHm5zBTlNywJMQ/edit?utm_content=DAFTFxhLLPw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+  const resumeData = "http://localhost:3000/pdf/emilharjula.pdf";
 
   const previewData = `${resumeData.substr(
     0,
-    resumeData.lastIndexOf('/') + 1
-  )}view?embed`
+    resumeData.lastIndexOf("/") + 1
+  )}view?embed`;
 
   return (
     <>
@@ -37,23 +36,20 @@ export default function Resume() {
       <ScrollTop />
       <Section>
         <Title>
-          <p>../curriculum</p>
-          Currículo
+          Resume
           <span>
-            <BsFileText /> Curriculum
+            <BsFileText /> Resume
           </span>
         </Title>
-        <Description>
-          Aqui você poderá ver ou baixar o meu currículo.
-        </Description>
-
+        <Description>Here you can view or download my resume. </Description>
+    
         <PageSection>
           <iframe
-            src={previewData}
+            src={resumeData}
             allowFullScreen
-            width="740"
-            height="780"
-            title="Evander Inácio"
+            width="1360"
+            height="768"
+            title="Emil Harjula"
           />
 
           <CV />
@@ -61,5 +57,5 @@ export default function Resume() {
       </Section>
       <Footer />
     </>
-  )
+  );
 }

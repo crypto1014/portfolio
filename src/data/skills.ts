@@ -66,6 +66,42 @@ const cardSkills = [
     img: '/skills/git.svg',
     color: '#de4736'
   },
+  {
+    id: 12,
+    title: 'Node.js',
+    img: '/skills/nodejs.svg',
+    color: '#a0d020'
+  },
+  {
+    id: 13,
+    title: 'Express.js',
+    img: '/skills/express.svg',
+    color: '#808080'
+  },
+  {
+    id: 14,
+    title: 'Stripe',
+    img: '/skills/stripe.svg',
+    color: '#4050c0'
+  },
+  {
+    id: 15,
+    title: 'Spring Boot',
+    img: '/skills/spring.svg',
+    color: '#38a448'
+  },
+  {  
+    id: 16,
+    title: 'MongoDB',
+    img: '/skills/mongodb.svg',
+    color: '#48e438'
+  },
+  {
+    id: 17,
+    title: 'Firebase',
+    img: '/skills/firebase.svg',
+    color: '#e0e030'
+  },
 
 ]
 

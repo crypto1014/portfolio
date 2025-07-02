@@ -62,7 +62,7 @@ export function Projects() {
         })}
       </ProjectsContainer>
 
-      <AllProjects title={'Todos os projetos'} />
+      <AllProjects title={'All projects'} />
     </Container>
   )
 }

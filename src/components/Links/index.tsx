@@ -7,7 +7,7 @@ export function Links() {
   return (
     <>
       <Icons>
-        <Link href={"https://github.com/EvanderInacio"}>
+        <Link href={"https://github.com/crypto1014"}>
           <a target="_blank" aria-label="Link para o Github">
             <FiGithub />
           </a>
@@ -17,7 +17,7 @@ export function Links() {
             <FiLinkedin />
           </a>
         </Link>
-        <Link href={"https://api.whatsapp.com/send?phone=5511995085916"}>
+        <Link href={"https://api.whatsapp.com/send?phone=14706968158"}>
           <a
             target="_blank"
             aria-label="Link para entrar em contato via whatsapp"

@@ -52,14 +52,14 @@ export default function Projeto({ project }: ProjectProps) {
               <Link href={project.web}>
                 <a target="_blank">
                   <ButtonAlt>
-                    Projeto online <BsGlobe size={15} />
+                    Online project <BsGlobe size={15} />
                   </ButtonAlt>
                 </a>
               </Link>
               <Link href={project.github}>
                 <a target="_blank">
                   <ButtonAlt>
-                    Repositório <FaGithub size={17} />
+                   Repository <FaGithub size={17} />
                   </ButtonAlt>
                 </a>
               </Link>
@@ -70,7 +70,7 @@ export default function Projeto({ project }: ProjectProps) {
         <S.DescriptionProject>
           <div className="description">
             <Title>
-              Descrição
+              Description
               <span>
                 <ChatCenteredText /> Description
               </span>
@@ -88,7 +88,7 @@ export default function Projeto({ project }: ProjectProps) {
           </Title>
 
           <Description style={{ textAlign: 'center' }}>
-            Tecnologias usadas no desenvolvimento do projeto.
+            Technologies used in the development of the project.
           </Description>
 
           <S.TagsContainer>
@@ -127,20 +127,20 @@ export default function Projeto({ project }: ProjectProps) {
 
           <S.PrintContent>
             <S.Gif>
-              <h2>Detalhes</h2>
+              <h2>Details</h2>
               <p>
-                Nome: <span>{project.title}</span>
+                Name: <span>{project.title}</span>
               </p>
               <p>
                 Status: <span>{project.status}</span>
               </p>
               <p>
-                Ano: <span>{project.year}</span>
+                Date: <span>{project.year}</span>
               </p>
               <h5>Preview</h5>
-              <video className="preview" loop autoPlay muted playsInline>
+              {/* <video className="preview" loop autoPlay muted playsInline>
                 <source src={project.gif} />
-              </video>
+              </video> */}
             </S.Gif>
 
             <S.Print>
@@ -163,7 +163,7 @@ export default function Projeto({ project }: ProjectProps) {
           </S.PrintContent>
         </S.PrintContainer>
 
-        <S.ContainerVideo>
+        {/* <S.ContainerVideo>
           <div className="imageVideo">
             <img src={project.backgroundImage} alt={project.title} />
           </div>
@@ -175,7 +175,7 @@ export default function Projeto({ project }: ProjectProps) {
             <img
               className="vector"
               src="/vectors/youtube.svg"
-              alt="logo do YouTube"
+              alt="YouTube logo"
             />
           </Title>
           <S.Video>
@@ -188,10 +188,10 @@ export default function Projeto({ project }: ProjectProps) {
               config={{ file: { forceHLS: true } }}
             />
           </S.Video>
-        </S.ContainerVideo>
+        </S.ContainerVideo> */}
 
         <div className="allProjects">
-          <AllProjects title={'Veja outros projetos'} />
+          <AllProjects title={'See other projects'} />
         </div>
         <Link href={'/#projects'}>
           <ButtonSecondary>
@@ -201,7 +201,7 @@ export default function Projeto({ project }: ProjectProps) {
                 weight="bold"
                 size={18}
               />{' '}
-              Voltar
+              Go to Back
             </a>
           </ButtonSecondary>
         </Link>

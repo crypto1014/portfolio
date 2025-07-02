@@ -1,22 +1,22 @@
-import Link from 'next/link'
-import work from '../../data/works'
-import { Container, Title } from '../../styles/styles'
-import { WorkContainer, WorkContent } from './styles'
-import { AiOutlineRightCircle } from 'react-icons/ai'
-import { BiBarChartSquare } from 'react-icons/bi'
+import Link from "next/link";
+import work from "../../data/works";
+import { Container, Title } from "../../styles/styles";
+import { WorkContainer, WorkContent } from "./styles";
+import { AiOutlineRightCircle } from "react-icons/ai";
+import { BiBarChartSquare } from "react-icons/bi";
 
 export function Work() {
   return (
     <Container id="work">
       <Title>
-        Trabalho
+        Work
         <span>
           <BiBarChartSquare /> Work
         </span>
       </Title>
 
       <WorkContainer>
-        {work.map(work => {
+        {work.map((work) => {
           return (
             <WorkContent key={work.id} imgUrl={work.img}>
               <div className="workItem">
@@ -29,14 +29,14 @@ export function Work() {
               <button type="button">
                 <Link href={`/work/${work.url}`}>
                   <a>
-                    Ver mais <AiOutlineRightCircle />
+                    See more <AiOutlineRightCircle />
                   </a>
                 </Link>
               </button>
             </WorkContent>
-          )
+          );
         })}
       </WorkContainer>
     </Container>
-  )
+  );
 }

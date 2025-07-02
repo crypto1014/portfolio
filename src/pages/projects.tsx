@@ -1,32 +1,32 @@
-import { useState } from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import projects from '../data/projects'
-import { Header } from '../components/Header'
-import { Links } from '../components/Links'
-import { Footer } from '../components/Footer'
-import { ScrollTop } from '../components/ScrollTop'
-import * as S from '../styles/projects'
-import * as T from '../styles/styles'
-import { HiOutlineDesktopComputer } from 'react-icons/hi'
-import { FaSearch } from 'react-icons/fa'
-import { ArrowRight } from 'phosphor-react'
+import { useState } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import projects from "../data/projects";
+import { Header } from "../components/Header";
+import { Links } from "../components/Links";
+import { Footer } from "../components/Footer";
+import { ScrollTop } from "../components/ScrollTop";
+import * as S from "../styles/projects";
+import * as T from "../styles/styles";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { FaSearch } from "react-icons/fa";
+import { ArrowRight } from "phosphor-react";
 
 interface ProjectsProps {
-  target: HTMLInputElement
+  target: HTMLInputElement;
 }
 
 export default function Projects() {
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState("");
 
   const handleChange = (e: ProjectsProps) => {
-    setQuery(e.target.value)
-  }
+    setQuery(e.target.value);
+  };
 
-  const projectFilter = projects.filter(project =>
+  const projectFilter = projects.filter((project) =>
     project.title.toLowerCase().includes(query.toLowerCase())
-  )
+  );
 
   return (
     <>
@@ -34,12 +34,12 @@ export default function Projects() {
         <title>Projects | Emil Harjula </title>
         <meta
           name="description"
-          content="Adoro codificar usando ferramentas como React, NextJS, Tailwind, Styled Components e muito mais! Aqui estão alguns dos meus projetos favoritos."
+          content="I love coding using tools like React, NextJS, Tailwind, Styled Components, and more! Here are some of my favorite projects."
         />
         <meta property="og:title" content="Projects | Emil Harjula" />
         <meta
           property="og:description"
-          content="Adoro codificar usando ferramentas como React, NextJS, Tailwind, Styled Components e muito mais! Aqui estão alguns dos meus projetos favoritos."
+          content="I love coding using tools like React, NextJS, Tailwind, Styled Components, and more! Here are some of my favorite projects."
         />
       </Head>
 
@@ -48,27 +48,26 @@ export default function Projects() {
       <ScrollTop />
       <T.Section>
         <T.Title>
-          <p>../projects</p>
           Projects
           <span>
             <HiOutlineDesktopComputer /> Projects
           </span>
         </T.Title>
         <T.Description>
-          Aqui você poderá ver alguns dos trabalhos que eu desenvolvi. Navegue à
-          vontade e explore os projetos para ver como foram criados, as
-          tecnologias utilizadas e as funcionalidades implementadas.
+          Here you can see some of the work I have developed. Feel free to
+          browse and explore the projects to see how they were created, the
+          technologies used and the functionalities implemented.
         </T.Description>
 
         <S.ProjectsContainer>
           <S.ProjectsContent>
             <div className="search">
-              <p>Pesquise pelo nome do projeto</p>
+              <p>Search by project name</p>
 
               <div className="input">
                 <input
                   type="text"
-                  placeholder="Pesquisar..."
+                  placeholder="To look for..."
                   value={query}
                   onChange={handleChange}
                 />
@@ -77,10 +76,10 @@ export default function Projects() {
             </div>
 
             {!projectFilter.length && (
-              <h3 className="not-found">Projeto não encontrado 🙁</h3>
+              <h3 className="not-found">Project not found 🙁</h3>
             )}
 
-            {projectFilter.map(project => {
+            {projectFilter.map((project) => {
               return (
                 <>
                   <div className="border" key={project.id} />
@@ -99,7 +98,7 @@ export default function Projects() {
                         <Image
                           width={20}
                           height={20}
-                          src={'/icon.svg'}
+                          src={"/icon.svg"}
                           alt={project.title}
                         />
                         <h2>{project.title}</h2>
@@ -108,18 +107,18 @@ export default function Projects() {
                         <p>{project.description}</p>
 
                         <div className="tags">
-                          {project.tags.map(tag => {
-                            return <span key={tag.name}>{tag.name}</span>
+                          {project.tags.map((tag) => {
+                            return <span key={tag.name}>{tag.name}</span>;
                           })}
                         </div>
                       </div>
                       <Link href={`/project/${project.url}`}>
                         <a>
                           <T.ButtonAlternatives>
-                            Ver projeto
+                            View project
                             <ArrowRight
                               style={{
-                                marginBottom: '-0.1rem'
+                                marginBottom: "-0.1rem",
                               }}
                               weight="bold"
                               size={16}
@@ -130,17 +129,17 @@ export default function Projects() {
                     </div>
                   </S.ProjectsItem>
                 </>
-              )
+              );
             })}
 
             <p className="github">
-              Ei, ei, ei... Tenho ainda mais no{' '}
+              I have more in the{" "}
               <a
-                href="https://github.com/EvanderInacio"
+                href="https://github.com/crypto1014"
                 target="_blank"
                 rel="noreferrer"
               >
-                meu GitHub{' '}
+                my Github{" "}
               </a>
               !
             </p>
@@ -149,5 +148,5 @@ export default function Projects() {
       </T.Section>
       <Footer />
     </>
-  )
+  );
 }
