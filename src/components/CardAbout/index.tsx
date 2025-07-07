@@ -20,7 +20,7 @@ export function About() {
 
         <div className="aboutContent">
           <div className="aboutDescription">
-            <h2>Deixe-me apresentar</h2>
+            <h2>About me</h2>
             <p>
               I'm a front-end developer with a passion for designing and coding.
               My specialty is creating interfaces and features for web
