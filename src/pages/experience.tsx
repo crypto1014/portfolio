@@ -59,11 +59,11 @@ export default function Experience() {
           >
             <TabButton>
               <TabList className="tab__list">
-                {experiences.map((experience) => {
+                {experiences.map((experience, index) => {
                   if (experience.id) {
                     numbering += 1;
                     return (
-                      <>
+                      <div key={index}>
                         <h2 key={experience.id}>
                           {numbering >= 0 && numbering <= 10
                             ? `0${numbering - 1}`
@@ -72,7 +72,7 @@ export default function Experience() {
                         <Tab className="tab">
                           <button>{experience.title}</button>
                         </Tab>
-                      </>
+                      </div>
                     );
                   }
                 })}
@@ -100,13 +100,14 @@ export default function Experience() {
                       </div>
                     </div>
                     <ul>
-                      {experience.descriptions.map((descriptioin: string) => (
+                      {experience.descriptions.map((descriptioin: string, index: number) => (
                         <li
                           style={{
                             lineHeight: "25px",
                             letterSpacing: "0.5px",
                             listStyleType: "disc",
                           }}
+                          key={index}
                         >
                           {descriptioin}
                         </li>

@@ -22,7 +22,7 @@ export function About() {
           <div className="aboutDescription">
             <h2>About me</h2>
             <p>
-              I'm a front-end developer with a passion for designing and coding.
+              I&apos;m a front-end developer with a passion for designing and coding.
               My specialty is creating interfaces and features for web
               applications using React.js and Next.js.
               <br />

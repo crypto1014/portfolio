@@ -100,7 +100,7 @@ export default function About() {
 
               <S.AboutContact>
                 <h3>
-                  Let's talk, who knows, maybe we can create an incredible project together?
+                  Let&apos;s talk, who knows, maybe we can create an incredible project together?
                 </h3>
                 <p>Send me a message! 😉</p>
                 <Link href={"/contact"}>

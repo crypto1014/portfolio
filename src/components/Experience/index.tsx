@@ -58,9 +58,11 @@ export function Experience() {
                       <h2>{experience.subTitle}</h2>
                       <span>{experience.office}</span>
                       <li>
-                        {experience.descriptions.map((descriptioin: string) => (
-                          <ul>{descriptioin}</ul>
-                        ))}
+                        {experience.descriptions.map(
+                          (descriptioin: string, index: number) => (
+                            <ul key={index}>{descriptioin}</ul>
+                          )
+                        )}
                       </li>
                       <ul>
                         <h3>Techs:</h3>
